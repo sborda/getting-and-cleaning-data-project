@@ -1,0 +1,31 @@
+---
+title: "Getting and cleaning data - Course project"
+author: "sborda"
+date: "31 de enero de 2016"
+output: html_document
+---
+
+## Introduction
+
+This repo contains the files needed for my course project 
+Getting and cleaning data by John Hopkins University.
+
+## Files inside this repo
+
+The files inside this repo are:
+
+- "README.md": This markdown file 
+- "run_analysis.R":Contains all the functions used to create the tidydata.txt file 
+- "Codebook.md": A dictionary that discribes each variable in the "tidydata.txt" file
+
+## Content of "tidydata.txt"
+
+The "tidydata.txt" file contains a summarized version of the measurement of 30
+subjects performing activities of daily living while carrying a waist-mounted smartphone with embedded inertial sensors. It can be recreated using the commands in the run_analysis.R script file
+
+In the "tidydata.txt" the 88 varibles are named by legible variables names, that describe the activity performed and the recollection method. Variables from column 3 to 180 range from -1 to 1, with 6 activities per subject.
+
+The files used are avaliable in this url http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+
+

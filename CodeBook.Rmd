@@ -1,0 +1,115 @@
+---
+title: "CodeBook"
+author: "sborda"
+date: "31 de enero de 2016"
+output: html_document
+---
+## Variables in the "tidydata.txt" file
+
+The "tidydata.txt" file is a data frame of 180 observations and 88 variables stored
+in a text file. The first two variables identify the subject performing 
+six activities each. These activities are the measurent of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+## Identifying variables 
+ [1] "subject"  
+ Levels 30
+ 
+ [2] "activity"                
+Levels                       
+  1 'LAYING'                
+  2 'SITTING'                
+  3 'STANDING'              
+  4 'WALKING'                
+  5 'WALKING_DOWNSTAIRS'     
+  6 'WALKING_UPSTAIRS'   
+  
+## Summarized variables
+Variables summarized by the mean of each activity performed by subject. Each subject perfoms 6 activities. All the continues variables range form -1 to 1.
+
+ [3] "timebodyaccelerationmeanxaxis"                       
+ [4] "timebodyaccelerationmeanyaxis"                       
+ [5] "timebodyaccelerationmeanzaxis"                       
+ [6] "timebodyaccelerationstandardeviationxaxis"           
+ [7] "timebodyaccelerationstandardeviationyaxis"           
+ [8] "timebodyaccelerationstandardeviationzaxis"           
+ [9] "timegravityaccelerationmeanxaxis"                    
+[10] "timegravityaccelerationmeanyaxis"                    
+[11] "timegravityaccelerationmeanzaxis"                    
+[12] "timegravityaccelerationstandardeviationxaxis"        
+[13] "timegravityaccelerationstandardeviationyaxis"        
+[14] "timegravityaccelerationstandardeviationzaxis"        
+[15] "timebodyaccelerationjerkmeanxaxis"                   
+[16] "timebodyaccelerationjerkmeanyaxis"                   
+[17] "timebodyaccelerationjerkmeanzaxis"                   
+[18] "timebodyaccelerationjerkstandardeviationxaxis"       
+[19] "timebodyaccelerationjerkstandardeviationyaxis"       
+[20] "timebodyaccelerationjerkstandardeviationzaxis"       
+[21] "timebodygyromeanxaxis"                               
+[22] "timebodygyromeanyaxis"                               
+[23] "timebodygyromeanzaxis"                               
+[24] "timebodygyrostandardeviationxaxis"                   
+[25] "timebodygyrostandardeviationyaxis"                   
+[26] "timebodygyrostandardeviationzaxis"                   
+[27] "timebodygyrojerkmeanxaxis"                           
+[28] "timebodygyrojerkmeanyaxis"                           
+[29] "timebodygyrojerkmeanzaxis"                           
+[30] "timebodygyrojerkstandardeviationxaxis"               
+[31] "timebodygyrojerkstandardeviationyaxis"               
+[32] "timebodygyrojerkstandardeviationzaxis"               
+[33] "timebodyaccelerationmagmean"                         
+[34] "timebodyaccelerationmagstandardeviation"             
+[35] "timegravityaccelerationmagmean"                      
+[36] "timegravityaccelerationmagstandardeviation"          
+[37] "timebodyaccelerationjerkmagmean"                     
+[38] "timebodyaccelerationjerkmagstandardeviation"         
+[39] "timebodygyromagmean"                                 
+[40] "timebodygyromagstandardeviation"                     
+[41] "timebodygyrojerkmagmean"                             
+[42] "timebodygyrojerkmagstandardeviation"                 
+[43] "frecuencybodyaccelerationmeanxaxis"                  
+[44] "frecuencybodyaccelerationmeanyaxis"                  
+[45] "frecuencybodyaccelerationmeanzaxis"                  
+[46] "frecuencybodyaccelerationstandardeviationxaxis"      
+[47] "frecuencybodyaccelerationstandardeviationyaxis"      
+[48] "frecuencybodyaccelerationstandardeviationzaxis"      
+[49] "frecuencybodyaccelerationmeanfreqxaxis"              
+[50] "frecuencybodyaccelerationmeanfreqyaxis"              
+[51] "frecuencybodyaccelerationmeanfreqzaxis"              
+[52] "frecuencybodyaccelerationjerkmeanxaxis"              
+[53] "frecuencybodyaccelerationjerkmeanyaxis"              
+[54] "frecuencybodyaccelerationjerkmeanzaxis"              
+[55] "frecuencybodyaccelerationjerkstandardeviationxaxis"  
+[56] "frecuencybodyaccelerationjerkstandardeviationyaxis"  
+[57] "frecuencybodyaccelerationjerkstandardeviationzaxis"  
+[58] "frecuencybodyaccelerationjerkmeanfreqxaxis"          
+[59] "frecuencybodyaccelerationjerkmeanfreqyaxis"          
+[60] "frecuencybodyaccelerationjerkmeanfreqzaxis"          
+[61] "frecuencybodygyromeanxaxis"                          
+[62] "frecuencybodygyromeanyaxis"                          
+[63] "frecuencybodygyromeanzaxis"                          
+[64] "frecuencybodygyrostandardeviationxaxis"              
+[65] "frecuencybodygyrostandardeviationyaxis"              
+[66] "frecuencybodygyrostandardeviationzaxis"              
+[67] "frecuencybodygyromeanfreqxaxis"                      
+[68] "frecuencybodygyromeanfreqyaxis"                      
+[69] "frecuencybodygyromeanfreqzaxis"                      
+[70] "frecuencybodyaccelerationmagmean"                    
+[71] "frecuencybodyaccelerationmagstandardeviation"        
+[72] "frecuencybodyaccelerationmagmeanfreq"                
+[73] "frecuencybodybodyaccelerationjerkmagmean"            
+[74] "frecuencybodybodyaccelerationjerkmagstandardeviation"
+[75] "frecuencybodybodyaccelerationjerkmagmeanfreq"        
+[76] "frecuencybodybodygyromagmean"                        
+[77] "frecuencybodybodygyromagstandardeviation"            
+[78] "frecuencybodybodygyromagmeanfreq"                    
+[79] "frecuencybodybodygyrojerkmagmean"                    
+[80] "frecuencybodybodygyrojerkmagstandardeviation"        
+[81] "frecuencybodybodygyrojerkmagmeanfreq"                
+[82] "angle(tbodyaccelerationmean,gravity)"                
+[83] "angle(tbodyaccelerationjerkmean),gravitymean)"       
+[84] "angle(tbodygyromean,gravitymean)"                    
+[85] "angle(tbodygyrojerkmean,gravitymean)"                
+[86] "angle(x,gravitymean)"                                
+[87] "angle(y,gravitymean)"                                
+[88] "angle(z,gravitymean)"
+    
